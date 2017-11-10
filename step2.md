@@ -43,7 +43,7 @@ With those removed we will add in the first Docker step which will create the im
 
 ![alt text](img/step2/docker1.png "docker step one")
 
-Once you've added that step go ahead and click on it. Again, you can change the display name to whatever you want. Most of the options are self explanitory but the three we really care about are:
+Once you've added that step go ahead and click on it. Again, you can change the display name to whatever you want. Most of the options are self explanatory but the three we really care about are:
 
 * Azure subscription
 * Azure Container Registry
@@ -60,3 +60,5 @@ Take a look at the other options to get an idea on what you can do. The image na
 At this point VSTS can compile our code and build a container that the code can run in. The next thing we need to do is push our container up to our registry so that we can actually deploy it in Azure.
 
 We'll add another Docker step (just like before) and set the same subscription and Azure Container Registry. This time though, in "Action" we are going to select "Push an image". This is going to take the image that was built in the previous step and push it up into our registry so that we can deploy it in [step 3](step3.md).
+
+Now go ahead and hit "Save" up top and go have an adult beverage (if you are of legal drinking age). Once you are done, proceed to [step 3](step3.md).
